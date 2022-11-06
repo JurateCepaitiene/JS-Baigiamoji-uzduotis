@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <script src="todo_app.js" defer></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+    <h1>To Do App</h1>
+    <div class="user_info"></div>
+    <button id="add">Add</button>
+    <div class="todos"></div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="todo" action="">
+          <label for="id" id="id_label" style="display: none">ID</label><br />
+          <input
+            type="text"
+            id="id"
+            name="id"
+            style="display: none"
+            disabled
+          /><br />
+          <label for="type">TYPE</label><br />
+          <input type="text" id="type" name="type" /><br />
+          <label for="content">CONTENT</label><br />
+          <input type="text" id="content" name="content" /><br />
+          <label for="end_date">END DATE</label><br />
+          <input type="datetime-local" id="end_date" name="end_date" /><br />
+          <input
+            type="submit"
+            id="modal_button"
+            name="modal_button"
+            value="SAVE"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
